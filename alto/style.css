@@ -12,6 +12,7 @@ body, html {
 	flex-grow: 1;
 	--accent-primary: #F10DA2;
 	--accent-secondary: #FE5000;
+	overflow-x: hidden;
 }
 
 section {

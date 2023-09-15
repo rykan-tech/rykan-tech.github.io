@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Alto - Rykan</title>
+		<link href="style.css" rel="stylesheet" />
+		<noscript>
+			<!-- Modify styles to create functioning site without javascript. -->
+			<link href="noscript.css" rel="stylesheet" />
+		</noscript>
+	</head>
+	<body>
+		<section class="main-section" style="max-height: 100vh;z-index: 100;">
+			<div class="subsection" id="subsection-app-landing">
+				<div class="icon-container">
+					<img class="app-icon-halo" src="./resource/IconHalo.png" srcset="./resource/IconHalo.png, ./resource/IconHalo@2x.png 2x" alt="" />
+					<img class="app-icon" src="./resource/AppIcon.png" alt="Alto app icon: A cutout of a pseudo-Compact Disc and note stem in a rounded white rectangle" />
+				</div>
+				<h1 class="app-title beta">Alto</h1>
+				<h2 class="tagline">One&nbsp;player to rule them&nbsp;all.</h2>
+				<button class="download" href="#download" onclick="showDownloadDialog();event.preventDefault();"><img alt="" src="./resource/Download.svg" /><span>Download for Mac</span></button>
+				<a href="#screenshots" onclick="event.preventDefault();window.scrollTo({top: window.innerHeight, behavior: 'smooth'});" class="link">Screenshots <img alt="" src="./resource/Go.svg" /></a>
+			</div>
+		</section>
+		<section class="screenshot" id="screenshots">
+			<div class="background-container">
+				<div class="background quickplay">
+					<picture>
+						<source media="(min-width: 1280px)" srcset="./resource/quickplay-large.png" />
+						<source media="(max-width: 1280px)" srcset="./resource/quickplay-small.png" />
+						<img alt="screenshot of Alto Quickplay screen" src="./resource/quickplay-small.png" />
+					</picture>
+				</div>
+				<div class="blur" id="landing-blur"></div>
+			</div>
+			<h1><!-- Part 1:  -->Quickplay</h1>
+			<p>Pin anything in Alto to quickplay and have instant access to it.</p>
+		</section>
+		<section class="screenshot" style="--position: 3;">
+			<div class="background-container">
+				<div class="background collection artists">
+					<picture>
+						<source media="(min-width: 1280px)" srcset="./resource/collection.artists-large.png" />
+						<source media="(max-width: 1280px)" srcset="./resource/collection.artists-small.png" />
+						<img alt="screenshot of Artists tab in Music screen" src="./resource/collection.artists-small.png" />
+					</picture>
+				</div>
+			</div>
+			<h1><!-- Part 2:  -->Collection</h1>
+			<p>Convenient view options for music in your collection.</p>
+		</section>
+		<section class="screenshot" style="--position: 5;">
+			<div class="background-container">
+				<div class="background collection albums">
+					<picture>
+						<source media="(min-width: 1280px)" srcset="./resource/collection.albums-large.png" />
+						<source media="(max-width: 1280px)" srcset="./resource/collection.albums-small.png" />
+						<img alt="screenshot of Albums tab in Music screen" src="./resource/collection.albums-small.png" />
+					</picture>
+				</div>
+			</div>
+			<h1>Albums</h1>
+		</section>
+		<section class="screenshot" style="--position: 6;">
+			<div class="background-container">
+				<div class="background collection genres">
+					<picture>
+						<source media="(min-width: 1280px)" srcset="./resource/collection.genres-large.png" />
+						<source media="(max-width: 1280px)" srcset="./resource/collection.genres-small.png" />
+						<img alt="screenshot of Genres tab in Music screen" src="./resource/collection.genres-small.png" />
+					</picture>
+				</div>
+			</div>
+			<h1>Genres</h1>
+		</section>
+		<section class="screenshot" style="--position: 7;">
+			<div class="background-container">
+				<div class="background collection songs">
+					<picture>
+						<source media="(min-width: 1280px)" srcset="./resource/collection.songs-large.png" />
+						<source media="(max-width: 1280px)" srcset="./resource/collection.songs-small.png" />
+						<img alt="screenshot of Songs tab in Music screen" src="./resource/collection.songs-small.png" />
+					</picture>
+				</div>
+			</div>
+			<h1>Songs</h1>
+		</section>
+		<section class="screenshot" style="--position: 8;">
+			<div class="background-container">
+				<div class="background collection playlists">
+					<picture>
+						<source media="(min-width: 1280px)" srcset="./resource/collection.playlists-large.png" />
+						<source media="(max-width: 1280px)" srcset="./resource/collection.playlists-small.png" />
+						<img alt="screenshot of Playlists screen" src="./resource/collection.playlists-small.png" />
+					</picture>
+				</div>
+			</div>
+			<h1>Playlists</h1>
+		</section>
+		<section class="screenshot" style="--position: 9;">
+			<div class="background-container">
+				<div class="background now-playing">
+					<picture>
+						<source media="(min-width: 1280px)" srcset="./resource/nowplaying-large.png" />
+						<source media="(max-width: 1280px)" srcset="./resource/nowplaying-small.png" />
+						<img alt="screenshot of Now Playing information screen/screensaver" src="./resource/nowplaying-small.png" />
+					</picture>
+				</div>
+			</div>
+			<h1><!-- Part 3:  -->Now Playing</h1>
+		</section>
+		<div class="main-section padding"></div>
+		<div class="main-section padding"></div>
+		<div class="main-section padding half"></div>
+		<div class="main-section padding half" id="footer-scroll-anchor"></div>
+		<section class="main-section" style="--position: 10;">
+			<div class="background-container">
+				<div class="blur" id="finale-blur"></div>
+			</div>
+			<div class="subsection small" id="finale-cta">
+				<div class="icon-container">
+					<img class="app-icon-halo" src="./resource/IconHalo.png" srcset="./resource/IconHalo.png, ./resource/IconHalo@2x.png 2x" alt="" />
+					<img class="app-icon" src="./resource/AppIcon.png" alt="Alto app icon: A cutout of a pseudo-Compact Disc and note stem in a rounded white rectangle" />
+				</div>
+				<h1 class="app-title beta">Alto</h1>
+				<h2 class="tagline">One&nbsp;player to rule them&nbsp;all.</h2>
+				<button class="download" href="#download" onclick="showDownloadDialog();event.preventDefault();"><img alt="" src="./resource/Download.svg" /><span>Download for Mac</span></button>
+			</div>
+		</section>
+		<footer style="--position: 10.5">
+			<h2>Website Copyright © 2023, Madeline Hart. See License.</h2>
+			<p>Alto, Alto Screenshots Copyright © 2023, Madeline Hart. All rights reserved.</p>
+			<p>Trademarks: All third-party trademarks are property of their respective owners.</p>
+			<p>Cookies: No cookies or other tracking mechanisms are used on this website.</p>
+			<p>Contact: Feel free to send an e-mail to <noscript>[Requires JavaScript]</noscript> <a href="mailto:nothanks@spam.invalid" id="liame">please.wait@loading.email</a></p>
+		</footer>
+		<dialog id="download-dialog">
+			<h1>Select Version</h1>
+			<div style="display: flex; flex-direction: row; gap: 1rem">
+				<a href="https://github.com/rykan-tech/alto-releases/releases/download/v0.9.0-ICL/Alto-0.9.0-ICL-arm64.dmg" style="justify-content: center;" download><!-- <img alt="" src="./resource/Download.svg" /> --><span>Apple Silicon</span></a>
+				<a href="https://github.com/rykan-tech/alto-releases/releases/download/v0.9.0-ICL/Alto-0.9.0-ICL-x64.dmg" style="justify-content: center;" download><!-- <img alt="" src="./resource/Download.svg" /> --><span>Intel</span></a>
+			</div>
+			<button onclick="closeDialog();">Close</button>
+		</dialog>
+		<script>
+			function ratio() {
+				return Math.max(window.innerWidth, window.innerHeight) / Math.min(window.innerWidth, window.innerHeight);
+			}
+			document.documentElement.style.setProperty("--scroll", Math.max(window.pageYOffset / window.innerHeight, 0));
+			document.documentElement.style.setProperty("--ratio", ratio());
+			window.addEventListener("scroll", () => {
+				document.documentElement.style.setProperty("--scroll", Math.max(window.pageYOffset / window.innerHeight, 0));
+			}, false);
+			window.addEventListener("resize", () => {
+				document.documentElement.style.setProperty("--ratio", ratio());
+			})
+			function showDownloadDialog() {
+				document.getElementById("download-dialog").showModal();
+			}
+			function closeDialog() {
+				document.getElementById("download-dialog").close();
+			}
+			function a() {
+				let h5 = "ykan";
+				let p0 = "cont";
+				let el = document.getElementById("liame");
+				let l4 = "net";
+				let k0 = "act@r";
+				el.innerText = p0.concat(k0).concat(h5).concat(".").concat(l4);
+				el.setAttribute("href", "mailto:".concat(p0).concat(k0).concat(h5).concat(".").concat(l4));
+			}
+			window.setTimeout(a, 2000);
+		</script>
+	</body>
+</html>

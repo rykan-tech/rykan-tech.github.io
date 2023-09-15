@@ -1,0 +1,39 @@
+#subsection-app-landing, #finale-cta {
+	position: initial;
+}
+
+.main-section.padding {
+	display: none;
+}
+
+.main-section, .screenshot {
+	position: relative;
+}
+
+.screenshot h1 {
+	display: block;
+}
+
+.background-container, .background, .blur {
+	position: absolute;
+	inset: 0rem;
+}
+
+footer {
+	/* position: absolute; */
+	/* inset: unset; */
+	position: unset;
+}
+
+.blur {
+	backdrop-filter: none;
+	-webkit-backdrop-filter: none;
+	animation: none;
+	display: none;
+}
+
+* {
+	animation-delay: -100000000s!important;
+	animation-iteration-count: 0!important;
+	animation-fill-mode: none!important;
+}

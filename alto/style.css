@@ -406,6 +406,20 @@ body {
 	}
 }
 
+@keyframes move-up {
+	from {
+		translate: none;
+	}
+
+	30% {
+		translate: none;
+	}
+
+	to {
+		translate: 0% -35vh;
+	}
+}
+
 .subsection {
 	display: flex;
 	flex-direction: column;
@@ -422,14 +436,18 @@ body {
 
 #finale-cta {
 	inset: 0;
-	animation: blur-out 0.5s ease-in-out 1 both;
+	animation:
+		blur-out 0.5s ease-in-out 1 both,
+		move-up 0.5s linear 1 both;
+	animation-direction: reverse, normal;
+	animation-play-state: paused, paused;
+	animation-delay:
+		calc(calc(var(--scroll) - var(--position)) * -1s),
+		calc(calc(var(--scroll) - var(--position) - 0.5) * -1s);
 }
 
 #finale-blur {
 	animation: blur 0.5s ease-in-out 1 both;
-}
-
-#finale-cta, #finale-blur {
 	animation-direction: reverse;
 	animation-play-state: paused;
 	animation-delay: calc(calc(var(--scroll) - var(--position)) * -1s);
@@ -625,7 +643,7 @@ footer {
 	height: 50vh;
 	padding: 4rem;
 	box-sizing: border-box;
-	animation: fade-in 0.5s ease-in-out 1 both;
+	animation: fade-in 0.35s ease-in-out 1 both;
 	animation-play-state: paused;
 	animation-delay: calc(calc(var(--scroll) - var(--position)) * -1s);
 	pointer-events: none;
